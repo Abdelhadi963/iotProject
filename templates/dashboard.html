@@ -1,0 +1,91 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather dashboard</title>
+    <link rel="icon" type="image/png" href="{% static 'img/icon.png' %}">
+    <link rel="stylesheet" href="{% static 'css/dashboard.css'%}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+          <div>
+            
+            <h2 class="welcome-message">{{house_name}} dashboard</h2>
+            <div class="weather-icon">
+              <img id="icon" src="{% static 'icons/sun/4.png' %}" alt="" />
+            </div>
+            <div class="temperature">
+              <h1 id="temp-api">24</h1>
+              <span class="temp-unit"> °C</span>
+            </div>
+            <div class="date-time">
+              <p id="date-time">Friday, 14:00</p>
+            </div>
+            <div class="divider"></div>
+            <div class="condition-rain">
+              <div class="condition">
+                <i class="fas fa-cloud"></i>
+                <p id="condition">Sunny</p>
+              </div>
+              <div class="rain">
+                <i class="fas fa-tint"></i>
+                <p id="rain">perc - 0%</p>
+              </div>
+            </div>
+          </div>
+          <div class="location">
+            <div class="location-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="location-text">
+              <p id="location">لرباط, الرباط - سلا - القنيطرة, المغرب</p>
+            </div>
+          </div>
+        </div>
+        <div class="main">
+            <nav>
+                <ul class="options">
+                    <button class="hourly"> today</button>
+                    <!-- <button class="week active">details</button> -->
+                </ul>
+                <ul class="units">
+                    <button class="celcuis active">°C</button>
+                    <button class="fahrenheit">°F</button>
+                </ul>
+            </nav>
+            <div class="cards" id="weather-crads"></div>
+            <div class="highlights">
+                <h2 class="heading">today highlights</h2>
+                <div class="cards">
+                    <div class="card2">
+                        <h4 class="card-heading" >house temperature</h4>
+                        <div class="content">
+                          <p id="room-temp" >20</p>
+                          <p id="room-temp-status">Normal</p>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <h4 class="card-heading">Humidity</h4>
+                        <div class="content">
+                            <p id="room-humidity">20</p>
+                            <p id="room-humidity-status">Normal</p>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <h4 class="card-heading">Air Quality</h4>
+                        <div class="content">
+                            <p id="air-quality">45</p>
+                            <p id="air-quality-status">healthy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    
+</body>
+<script src="{% static 'js/index.js' %}"></script>
+</html>

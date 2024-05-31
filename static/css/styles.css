@@ -1,0 +1,59 @@
+body {
+    background-image: url('../img/backGround.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.center-content {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background: none;
+    color: rgb(0, 0, 0); /* Optional: for better readability on dark backgrounds */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: add text shadow for readability */
+    text-align: center;
+}
+.search-bar {
+    width: 70%; /* Adjust width as needed */
+    margin-top: 20px;
+    background: transparent;
+    
+}
+.search-bar .form-control {
+    background: transparent;
+    border: 1px solid rgb(96, 96, 96); /* Change to suit your design */
+    color: white; /* Ensure text is readable */
+    border-radius: 2%;
+}
+.search-bar .btn-primary {
+    background-color: rgba(0, 123, 255, 0.7); /* Adjust button color transparency */
+    border-radius: 5%;
+    margin-left: 5px;
+}
+.welcome-message{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
